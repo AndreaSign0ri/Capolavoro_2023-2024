@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="ISO-8859-1"> 
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>.ref1:visited {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.ref1:hover {
+  color: blue;
+}
+.ref1:active {
+  color: lightblue;
+}
+
+.who_am_i{
+  padding-top: 1%;
+  display: flex;
+  justify-content: flex-start; /* Allinea i contenuti all'inizio */
+}
+
+.me{
+  flex: 0.5; /* Riduce ulteriormente lo spazio assegnato all'immagine */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.me img {
+  max-width: 10%; /* Riduce ulteriormente la dimensione dell'immagine */
+}
+
+.text_me{
+  padding-right: 22%;
+  flex: 4.5; /* Assegna più spazio al testo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  padding-left: 0px; /* Aggiunge un po' di spazio tra l'immagine e il testo */
+}
+
+/* Media query per schermi con larghezza inferiore a 600px */
+@media (max-width: 600px) {
+  .me{
+    flex: 1; /* Assegna tutto lo spazio all'immagine su schermi piccoli */
+  }
+
+  .me img {
+    max-width: 100%; /* Aumenta la dimensione dell'immagine su schermi piccoli */
+  }
+
+}
+
+
+</style>
+<body style="background-color: whitesmoke;">
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <div class="topnav" id="myTopnav">
+    <a href="../index.html" class="active">Home</a>
+    <a href="chisono.html">Chi sono</a>
+    <a href="iscriviti/Iscrizione.html">Iscriviti</a>
+    <a href="login/login.html">Login</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="https://www.itispaleocapa.edu.it/" target="_blank" rel="noopener noreferrer">Paleocapa</a>
+  </div>
+
+  <div class="who_am_i">
+      <div style="padding: 5%;"> <!-- Riduci il padding qui -->
+           <img src="../foto/me.jpg" alt="logo" class="me">
+      </div>  
+    <div class="text_me">
+      <a>
+      <p>Ciao sono Andrea Signori, uno studente del paleocapa di 3 superiore.</p>
+      <p>la mia passione piu' grande oltre al calcio e' la <a href="https://training.olicyber.it/player/9018" class="ref1" target="_blank">la sicurezza informatica.</a></p>
+      </a>
+    </div>
+  </div>
+ 
+  <div class="noire_line">
+    <img src="../foto/divisore.png" alt="logo" class="logo_sep">
+
+  </div>
+
+  <div class="info">
+    <center class="info_text">
+      <p>Per segnalare eventuali bug scrivere una mail a</p>
+      <p>signoriandrea7@gmail.com</p>
+    </center>
+  </div>
+
+</body>
+</html>

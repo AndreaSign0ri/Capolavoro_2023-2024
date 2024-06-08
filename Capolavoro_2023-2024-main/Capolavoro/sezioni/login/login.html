@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: whitesmoke;">
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  
+  
+  <div class="topnav" id="myTopnav">
+    <a href="../../index.html" class="active">Home</a>
+    <a href="../chisono.html">Chi sono</a>
+    <a href="../iscriviti/Iscrizione.html">Iscriviti</a>
+    <a href="login.html">Login</a>
+    <a  href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="https://www.itispaleocapa.edu.it/" target="_blank" rel="noopener noreferrer">Paleocapa</a>
+  </div>
+  
+  <div>
+    <center>
+      <img src="../../logo/logo.png" alt="Logo" class="responsive"> 
+    </center>
+  </div>
+
+
+  <div style="padding-top: 5%;">
+    <form class="max-w-sm mx-auto" action="login.php" method="post" enctype="multipart/form-data">
+      <div class="mb-5">
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+        <input type="email" id="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-grey-500 dark:focus:border-grey-500" placeholder="mariorossi@gmail.com" required />
+      </div>
+      <div class="mb-5">
+        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+        <input type="password" id="password" name="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" required />
+      </div>
+      <div class="flex items-start mb-5">
+        <div class="flex items-center h-5">
+          <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-gray-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
+        </div>
+        <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
+      </div>
+      <button type="submit" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">Submit</button>
+    </form>
+  
+
+    <div class="noire_line" style="padding-top: 5%;">
+      <img src="../../foto/divisore.png" alt="logo" class="logo_sep">
+  
+    </div>
+  
+    <div class="info">
+      <center class="info_text">
+        <p>Per segnalare eventuali bug scrivere una mail a</p>
+        <p>signoriandrea7@gmail.com</p>
+      </center>
+    </div>
+
+</body>
+</html> 
+

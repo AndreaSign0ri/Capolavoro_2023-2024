@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: whitesmoke;">
+ 
+  
+  <div class="topnav" id="myTopnav">
+    <center>
+    <a href="../../index.html" class="active">Home</a>
+    <a href="../chisono.html">Chi sono</a>
+    <a href="">Iscriviti</a>
+    <a href="../login/login.html">Login</a>
+    <a  href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="https://www.itispaleocapa.edu.it/" target="_blank" rel="noopener noreferrer">Paleocapa</a>
+    </center>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+  <div>
+    <center>
+      <img src="../../logo/logo.png" alt="Logo" class="responsive"> 
+    </center>
+  </div>
+  
+
+
+<div class="subscribe">
+<form class="max-w-sm mx-auto" action="iscrizione.php" method="post" enctype="multipart/form-data">
+  <div class="mb-5">
+    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+    <input type="email" name="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500 dark:shadow-sm-light" placeholder="mariorossi@gmail.com" required />
+  </div>
+  <div class="mb-5">
+    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+    <input type="password" name="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500 dark:shadow-sm-light" required />
+  </div>
+  <div class="mb-5">
+    <label for="repeat_password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Repeat password</label>
+    <input type="password" name="repeat_password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500 dark:shadow-sm-light" required />
+  </div>
+  <div class="flex items-start mb-5">
+    <div class="flex items-center h-5">
+      <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-gray-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
+    </div>
+    <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="" id="myLink" class="text-gray-600 hover:underline dark:text-gray-500">terms and conditions</a></label>
+  </div>
+  <button type="submit" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">Register new account</button>
+</form>
+</div>
+
+
+<div class="noire_line" style="padding-top: 5%;">
+  <img src="../../foto/divisore.png" alt="logo" class="logo_sep">
+
+</div>
+
+<div class="info">
+  <center class="info_text">
+    <p>Per segnalare eventuali bug scrivere una mail a</p>
+    <p>signoriandrea7@gmail.com</p>
+  </center>
+</div>
+  
+<div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0px right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                    Terms of Service
+                </h3>
+                <button type="button" onclick="closeModal()" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only" >Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5 space-y-4">
+                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                  Il nostro sito rispetta la tua privacy. Non condivideremo mai i tuoi dati personali con terze parti senza il tuo consenso. Non siamo responsabili per eventuali danni o perdite derivanti dall' uso del nostro sito.
+                </p>
+                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                  Se hai domande o dubbi riguardo ai nostri termini e condizioni, ti invitiamo a contattarci via mail.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('[data-modal-hide="default-modal"]').addEventListener('click', function() {
+    document.getElementById('default-modal').classList.add('hidden');
+    });
+    });
+    document.getElementById("myLink").addEventListener("click", function(event){
+    event.preventDefault();
+    document.getElementById("default-modal").style.display ="block";
+    });
+</script>
+<script>
+  function closeModal() {
+      document.getElementById("default-modal").style.display = "none";
+  }
+</script>
+
+
+
+
+</body>
+</html>
